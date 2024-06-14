@@ -1,11 +1,11 @@
 # Maintainer: 7Ji <pugokughin@gmail.com>
 
-_pkgbase=sd-networkd-wg-deployer
+_pkgbase=wireguard-deployer
 _srcname="${_pkgbase}"
 pkgname=${_pkgbase}-git
-pkgver=0.1.0
+pkgver=0.1.0.r23.5b5d4f8
 pkgrel=1
-pkgdesc="A tool to generate easily deployable WireGuard configs and keys for systemd-networkd"
+pkgdesc="WireGuard configs and keys generaor for systemd-networkd and OpenWrt "
 arch=('x86_64' 'aarch64')
 url="https://github.com/7Ji/${_srcname}"
 license=('AGPL-3.0-or-later')

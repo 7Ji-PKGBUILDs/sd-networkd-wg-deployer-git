@@ -1,17 +1,17 @@
-pkgbase = sd-networkd-wg-deployer-git
-	pkgdesc = A tool to generate easily deployable WireGuard configs and keys for systemd-networkd
-	pkgver = 0.1.0
+pkgbase = wireguard-deployer-git
+	pkgdesc = WireGuard configs and keys generaor for systemd-networkd and OpenWrt 
+	pkgver = 0.1.0.r23.5b5d4f8
 	pkgrel = 1
-	url = https://github.com/7Ji/sd-networkd-wg-deployer
+	url = https://github.com/7Ji/wireguard-deployer
 	arch = x86_64
 	arch = aarch64
 	license = AGPL-3.0-or-later
 	makedepends = cargo
 	depends = gcc-libs
 	depends = glibc
-	provides = sd-networkd-wg-deployer=0.1.0
-	conflicts = sd-networkd-wg-deployer
-	source = git+https://github.com/7Ji/sd-networkd-wg-deployer.git
+	provides = wireguard-deployer=0.1.0.r23.5b5d4f8
+	conflicts = wireguard-deployer
+	source = git+https://github.com/7Ji/wireguard-deployer.git
 	sha256sums = SKIP
 
-pkgname = sd-networkd-wg-deployer-git
+pkgname = wireguard-deployer-git
