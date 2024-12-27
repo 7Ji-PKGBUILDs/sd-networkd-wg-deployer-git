@@ -1,6 +1,6 @@
 pkgbase = wireguard-deployer-git
 	pkgdesc = WireGuard configs and keys generaor for systemd-networkd and OpenWrt 
-	pkgver = 0.1.0.r23.5b5d4f8
+	pkgver = 0.1.0.r29.150e155
 	pkgrel = 1
 	url = https://github.com/7Ji/wireguard-deployer
 	arch = x86_64
@@ -9,7 +9,7 @@ pkgbase = wireguard-deployer-git
 	makedepends = cargo
 	depends = gcc-libs
 	depends = glibc
-	provides = wireguard-deployer=0.1.0.r23.5b5d4f8
+	provides = wireguard-deployer=0.1.0.r29.150e155
 	conflicts = wireguard-deployer
 	source = git+https://github.com/7Ji/wireguard-deployer.git
 	sha256sums = SKIP

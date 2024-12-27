@@ -3,7 +3,7 @@
 _pkgbase=wireguard-deployer
 _srcname="${_pkgbase}"
 pkgname=${_pkgbase}-git
-pkgver=0.1.0.r23.5b5d4f8
+pkgver=0.1.0.r29.150e155
 pkgrel=1
 pkgdesc="WireGuard configs and keys generaor for systemd-networkd and OpenWrt "
 arch=('x86_64' 'aarch64')
@@ -22,7 +22,8 @@ sha256sums=(
 prepare() {
   cd "${_srcname}"
   export RUSTUP_TOOLCHAIN=stable
-  cargo fetch --target "$(rustc -vV | sed -n 's/host: //p')"
+  cargo update
+  cargo fetch --locked --target "$(rustc -vV | sed -n 's/host: //p')"
 }
 
 pkgver() {
